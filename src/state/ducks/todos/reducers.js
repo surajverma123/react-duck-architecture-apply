@@ -7,6 +7,7 @@ const initialState = {
 const counter = (state = initialState, action) => {
   switch (action.type) {
     case "INCREASE_COUNTER":
+      console.log('increaseCounter REDUCERS')
       return Object.assign({}, state, {
         counter: 1
       })
